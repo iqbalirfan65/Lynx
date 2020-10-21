@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    
+    <table border="1" > 
+        <tr>
+            <td colspan="5"><input  id="layar" type="text" readonly style="text-align: right;"></input></td>
+        </tr>
+        <tr>
+            <td><button onclick="tampillayar(%)">%</button></td>
+            <td>
+                <input type="button" value="C" class="btn" onclick="clean()" /> 
+            </td>
+            <td>
+                <input
+                  type="button"
+                  value="DEL"
+                  onclick="backspace()"
+                />
+            </td>
+            <td><button class="button" value="/" onclick="tampillayar('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="button" value="7" onclick="tampillayar(7)">7</button></td>
+            <td><button class="button" value="8" onclick="tampillayar(8)">8</button></td>
+            <td><button class="button" value="9" onclick="tampillayar(9)">9</button></td>
+            <td><button class="button" value="X" onclick="tampillayar('*')">X</button></td>
+        </tr>
+        <tr>
+            <td><button class="button" value="4" onclick="tampillayar(4)">4</button></td>
+            <td><button class="button" value="5"onclick="tampillayar(5)">5</button></td>
+            <td><button class="button" value="6"onclick="tampillayar(6)">6</button></td>
+            <td><button class="button" value="-"onclick="tampillayar('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="button" value="1"onclick="tampillayar(1)">1</button></td>
+            <td><button class="button" value="2"onclick="tampillayar(2)">2</button></td>
+            <td><button class="button" value="3"onclick="tampillayar(3)">3</button></td>
+            <td><button class="button" value="+"onclick="tampillayar('+')">+</button></td>
+            
+        </tr>
+        <tr>
+            <td><button onclick="tampillayar(+/-)">+/-</button></td>
+            <td><button onclick="tampillayar(0)">0</button></td>
+            <td>
+                <input type="button" value=","  onclick="('.')" />
+            </td>
+            <td>
+            <input
+                type="button"
+                value="="
+                onclick="equal()"
+                style="height: 3em;"/>
+                  </td>
+        </tr>
+    </table>
+    <script src="Kalkulator.js"></script>
+</body>
+</html>
